@@ -1,30 +1,33 @@
-# Network Communication Anomaly Detection
+# Network Communication Anomaly Detection Using Machine Learning
+This project focuses on identifying anomalies in network communication using machine learning models trained on the KDDCUP dataset. Upon detecting anomalies, the system sends an email notification to the network administrator, providing detailed information about the detected anomaly.
+# Project Overview
+1. Anomaly Detection: Detect anomalies in network traffic using classification models.
+2. Email Notification System: Notify the network administrator immediately upon detecting an anomaly.
+3. ML Models Utilized: 
+	- Random Forest Classifier: Achieved 98% accuracy.
+	- Decision Tree Classifier: Achieved 95% accuracy.
+	- Naive Bayes: Achieved 79% accuracy.
 
-Network Communication Anomaly Detection System is used to detect the abnormalities or anomalies present in the network. This system is developed using machine learning techniques. This is the prototype of network anomaliy detection system, in which it can be used for both processed data and un-processed data.
-This system can be implemented in smart industries to dectect the anomalies in the network connected systems like  PLC's(Programmable Logic Controller) etc. This is an useful tool as it detects the anomlies generated in a network which enhances the network Security, Integrity, Availability. 
+# Tech Stack and Libraries
+- Programming Language: Python
+- Dataset: KDDCUP Dataset (https://www.kaggle.com/datasets/galaxyh/kdd-cup-1999-data/download?datasetVersionNumber=1)
+- ML Libraries:
+	- Scikit-learn
+	- NumPy
+	- Pandas
+- Email Services:
+	- smtplib for sending email notifications.
 
-# Dataset
+ # Getting Started
+ # Prerequisites
+ - Python 3.x installed.
 
-KDD - CUP dataset is used to implement it. The dataset includes various features extracted from the network traffic, such as protocol type, service, source and 
-destination IP addresses, source and destination ports, and more. The goal of the KDD Cup dataset is to detect network intrusions or attacks. It consists of both normal connections and 
-instances representing different types of attacks, including Denial of Service (DoS), User to Root (U2R), Remote to Local (R2L), and Probing attacks.
+# Installation and Setup
+1. Clone the Repository
+   ```bash
+   https://github.com/SPraveenKumar-spk/Network_Anomaly_Detection.git
 
-** for dataset visit to : https://www.kaggle.com/datasets/galaxyh/kdd-cup-1999-data/download?datasetVersionNumber=1
-# Machine Learning Algorithms
+2. Install Required Packages 
+   ```bash
+   pip install -r requirements.txt
 
-As the Anomalies detection is concerned with classification, used the machine learning algorithms of Decision Tree Classifier, Random Forest Classifier and Naive Bayes.
-The accuracy of algorithms are as follows :
-		Random Forest Classifier : 98%
-		Decision Tree Classifier : 95%
-		Naive Bayes		           : 79%
-
-# Implementation
-
-The "Network Communication Anomaly Detection " system is implemented using Random Forest Classifier algorithm. The system is developed in such a way that whenever
-the anomalies are found within a network it generates an email notification which includes details of anomaly type along with its features. 
-A csv file system is created in which it stores all the anomaly details like its type, features and time of generation. Additionally, Graph visualization system is developed in which it plots the line graph between time and no. of anomalies generated over that particular time.
-
-# Outcomes
-
-** Anomaly Detection
-** Email Notification
